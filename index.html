@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colour Plas Formula Data</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1830">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Colour Plas">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #0f1830; }
+    iframe { border: 0; width: 100%; height: 100vh; display: block; }
+  </style>
+</head>
+<body>
+  <!--
+    CHANGE THIS: put your real Apps Script /exec URL below.
+    It must be exactly the URL you use now, e.g.
+    https://script.google.com/macros/s/AKfycbxXuzWZpi7EewpUQXE_LvPbj2jUfVGv_LQvUOzUz25gzE7k5RMTsckcuyg_jQsMY9WE/exec
+  -->
+  <iframe id="app" src="https://script.google.com/macros/s/AKfycbxutFpCCTHegll5Sge9nPCeSX09CDsDL35NyOSuDNKvpomrsNyVr0wJwSs-YvzrOafV/exec"
+          allow="clipboard-read; clipboard-write"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
